@@ -30,6 +30,32 @@ sqlite3 db.sqlite
 
 Now you can copy all the create tables staments from tables.sql.
 
+## Installing sqlite3
+
+You can install sqlite3 trough node, or use the package manager of your operating system.
+
+
+```bash
+# PnPM
+pnpm add -g sqlite3
+
+# NPM
+npm install -g sqlite3
+
+# Brew (Mac OS)
+brew install sqlite3
+
+# Fedora / CentOS / RHEL
+sudo dnf install sqlite
+
+# Ubuntu
+sudo apt install sqlite3
+
+# Windows (trough Choco)
+choco install sqlite
+
+```
+
 ## Developing
 
 Once you've dowloaded all the required dependencies and created the tables you can run the project using the following command
