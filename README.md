@@ -15,11 +15,20 @@ pnpm instal
 ```
 
 The next step is to set up the database, We use a [SQLite](https://www.sqlite.org/) database.
-You need top open db.sqlite as a database and execute the content of tables.sql to prepare all tables.
+If you just want an empty database with the tables in tables.sql you can use db.base.sqlite
+
+```bash
+# Copy db.base.sqlite to db.sqlite
+cp db.base.sqlite db.sqlite
+```
+If you want to make changes to the table structure you need to create your own db.sqlite.
+First make the changes to tables.sql, delete db.sqlite and run the following command to create a new database
 
 ```bash
 sqlite3 db.sqlite
 ```
+
+Now you can copy all the create tables staments from tables.sql.
 
 ## Developing
 
